@@ -15,6 +15,7 @@ export default {
     crossOriginIsolation(),
   ],
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    assetsDir: './'
   }
 };
