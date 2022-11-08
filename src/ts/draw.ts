@@ -1,6 +1,4 @@
 import Konva from 'konva';
-import { Group } from 'konva/lib/Group';
-import { Shape, ShapeConfig } from 'konva/lib/Shape';
 import { Line } from 'konva/lib/shapes/Line';
 import { Stage } from 'konva/lib/Stage';
 
