@@ -11,11 +11,15 @@ export default {
     port: 8080,
     hot: true,
   },
-  plugins: [
-    crossOriginIsolation(),
-  ],
+  plugins: [crossOriginIsolation()],
   build: {
     outDir: '../dist',
-    assetsDir: './'
-  }
+    assetsDir: './',
+    rollupOptions: {
+      output: {
+        entryFileNames: 'bundle.js',
+        assetFileNames: 'bundle.[ext]',
+      },
+    },
+  },
 };
