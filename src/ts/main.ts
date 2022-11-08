@@ -49,7 +49,9 @@ function drawImage() {
 
   const clearButtonElement = <HTMLButtonElement>document.getElementById('clear-action');
   clearButtonElement.addEventListener('click', () => {
-    layer.destroyChildren();
+    stage.getLayers().forEach( layer => {
+      layer.destroyChildren();
+    });
   });
 
   handDrawn(stage);
