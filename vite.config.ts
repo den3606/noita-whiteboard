@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import crossOriginIsolation from 'vite-plugin-cross-origin-isolation';
 export default {
+  base: '/noita-whiteboard/',
   root: resolve(__dirname, 'src'),
   resolve: {
     alias: {
