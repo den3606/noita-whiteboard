@@ -15,7 +15,6 @@ export default {
   plugins: [crossOriginIsolation()],
   build: {
     outDir: '../dist',
-    assetsDir: './',
     rollupOptions: {
       output: {
         entryFileNames: 'bundle.js',
