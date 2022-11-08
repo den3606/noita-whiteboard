@@ -18,7 +18,7 @@ export const handDrawn = function (stage: Stage) {
     const pos = stage.getPointerPosition();
     lastLine = new Konva.Line({
       stroke: '#df4b26',
-      strokeWidth: mode === 'brush' ? 5 : 15,
+      strokeWidth: mode === 'brush' ? 5 : 25,
       globalCompositeOperation:
         mode === 'brush' ? 'source-over' : 'destination-out',
       // round cap for smoother lines
