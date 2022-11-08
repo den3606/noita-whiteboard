@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  padding: 10px;
+}
+
+.main-board {
+  width: 1280px;
+  height: 720px;
+  background-color: rgb(199, 240, 240);
+}
+
+.board-settings {
+  gap: 20px 20px;
+}
+
+.enemy-drag-image {
+  width: 50px;
+  height: 50px;
+}
+
+.enemy-drga-image-list {
+  width: 560px;
+  padding: 5px;
+  background-color: rgba(228, 13, 217, 0.267);
+  border: 2px solid #999;
+}
