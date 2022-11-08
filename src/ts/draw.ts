@@ -10,8 +10,10 @@ export const handDrawn = function (stage: Stage) {
   let mode = 'drag';
   let lastLine: Line;
 
-  stage.on('mousedown touchstart', function (e) {
-    if (mode !== 'brush' && mode !== 'eraser') { return; }
+  stage.on('mousedown touchstart', () => {
+    if (mode !== 'brush' && mode !== 'eraser') {
+      return;
+    }
     isPaint = true;
     const pos = stage.getPointerPosition();
     lastLine = new Konva.Line({
@@ -28,12 +30,12 @@ export const handDrawn = function (stage: Stage) {
     layer.add(lastLine);
   });
 
-  stage.on('mouseup touchend', function () {
+  stage.on('mouseup touchend', () => {
     isPaint = false;
   });
 
   // and core function - drawing
-  stage.on('mousemove touchmove', function (e) {
+  stage.on('mousemove touchmove', (e) => {
     if (!isPaint) {
       return;
     }
